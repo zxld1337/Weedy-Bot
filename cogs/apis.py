@@ -17,7 +17,7 @@ class Api(commands.Cog):
     # LOL STATS API
     @commands.command()
     async def lolstat(self, ctx, name):
-        apikey = 'RGAPI-5d76b69c-eaa8-4391-875e-593de54e9671'
+        apikey = 'api KEY HERE'
         url = f'https://eun1.api.riotgames.com/lol/summoner/v4/summoners/by-name/{name}?api_key={apikey}'
         res = requests.get(url)
         data = res.json()
@@ -72,7 +72,7 @@ class Api(commands.Cog):
     #WEATHER API 
     @commands.command()
     async def weather(self, ctx, city: str):
-        url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid=6d0c7bfed8550857d8c9aceabb6760dd&q='
+        url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid=APIKEYHERE='
         res = requests.get(url)
         data = res.json()
 
