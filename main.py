@@ -71,7 +71,7 @@ def getCurrentValue(to_, from_, amount_ = 1):
   
     payload = {}
     headers= {
-      "apikey": "zDPMAwoYdEMKqJBqGL1keAst14yBFqEc"
+      "apikey": "API KEY"
     }
     
     response = requests.request("GET", url, headers=headers, data = payload)
